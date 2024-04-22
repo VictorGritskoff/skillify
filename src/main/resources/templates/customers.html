@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <title>Skillify</title>
+        <link rel="stylesheet" href="https://cdn.datatables.net/2.0.3/css/dataTables.dataTables.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/buttons/3.0.1/css/buttons.dataTables.css">
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="navigation">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><ion-icon name="school-outline"></ion-icon></span>
+                            <span class="title"> SKILLIFY</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="home.html">
+                            <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                            <span class="title"> Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="customers.html">
+                            <span class="icon"><ion-icon name="people-circle-outline"></ion-icon></span>
+                            <span class="title"> Customers</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="courses.html">
+                            <span class="icon"><ion-icon name="document-outline"></ion-icon></span>
+                            <span class="title"> Courses</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="teachers.html">
+                            <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
+                            <span class="title"> Teachers</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="analytics.html">
+                            <span class="icon"><ion-icon name="podium-outline"></ion-icon></span>
+                            <span class="title"> Analytics</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="settings.html">
+                            <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
+                            <span class="title"> Settings</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><ion-icon name="information-circle-outline"></ion-icon></span>
+                            <span class="title"> Help</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="signup.html">
+                            <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                            <span class="title"> Sign Out</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- main -->
+            <div class="main">
+                <div class="topbar">
+                    <div class="toggle">
+                        <ion-icon name="menu-outline"></ion-icon>
+                    </div>
+                    <!-- search -->
+                    <div class="search">
+                        <label>
+                            <input type="text" placeholder="Search here">
+                            <ion-icon name="search-outline"></ion-icon>
+                        </label>
+                    </div>
+                    <!-- user image -->
+                    <div class="user">
+                        <span class="icon"><ion-icon name="people-circle-outline"></ion-icon></span>
+                    </div>
+                </div> 
+                <div class="customers-container">
+                    <h1>Customers</h1>
+                    <table id="example" class="customers-table">
+                        <thead>
+                            <tr>
+                                <th>№</th>
+                                <th>Customer</th>
+                                <th>Teacher</th>
+                                <th>Start Date</th>
+                                <th>Price</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Alex Taylor</td>
+                                <td>Mike Smith</td>
+                                <td>2023-05-15</td>
+                                <td>$50,000</td>
+                                <td><span class="status delivered">Delivered</span></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Emily Johnson</td>
+                                <td>John Doe</td>
+                                <td>2023-06-20</td>
+                                <td>$48,000</td>
+                                <td><span class="status delivered">Delivered</span></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Michael Brown</td>
+                                <td>Jane Smith</td>
+                                <td>2023-07-10</td>
+                                <td>$55,000</td>
+                                <td><span class="status delivered">Delivered</span></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Sarah Davis</td>
+                                <td>David Wilson</td>
+                                <td>2023-08-05</td>
+                                <td>$46,000</td>
+                                <td><span class="status canceled">Canceled</span></td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>James Johnson</td>
+                                <td>Susan Martinez</td>
+                                <td>2023-09-10</td>
+                                <td>$49,000</td>
+                                <td><span class="status inprogress">In progress</span></td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Emma Baker</td>
+                                <td>William Thompson</td>
+                                <td>2023-10-15</td>
+                                <td>$52,000</td>
+                                <td><span class="status delivered">Delivered</span></td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>Olivia Garcia</td>
+                                <td>Mark Davis</td>
+                                <td>2023-11-20</td>
+                                <td>$51,000</td>
+                                <td><span class="status canceled">Canceled</span></td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>David Wilson</td>
+                                <td>Sarah Johnson</td>
+                                <td>2023-12-25</td>
+                                <td>$53,000</td>
+                                <td><span class="status inprogress">In progress</span></td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>William Thompson</td>
+                                <td>Michael Brown</td>
+                                <td>2024-01-01</td>
+                                <td>$45,000</td>
+                                <td><span class="status delivered">Delivered</span></td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>Emily Davis</td>
+                                <td>Emily Johnson</td>
+                                <td>2024-02-05</td>
+                                <td>$47,000</td>
+                                <td><span class="status delivered">Delivered</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>  
+            </div>
+        
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script src="/js/toggle.js"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+        <script src="https://cdn.datatables.net/2.0.3/js/dataTables.js"></script>
+        <script src="https://cdn.datatables.net/buttons/3.0.1/js/dataTables.buttons.js"></script>
+        <script src="https://cdn.datatables.net/buttons/3.0.1/js/buttons.dataTables.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
+        <script src="https://cdn.datatables.net/buttons/3.0.1/js/buttons.html5.min.js"></script>
+        <script src="https://cdn.datatables.net/buttons/3.0.1/js/buttons.print.min.js"></script>
+        <script src="/js/editableTable.js"></script>
+        <script src="/js/navigation.js"></script>
+    </body>
+</html>
